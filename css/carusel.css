@@ -1,0 +1,41 @@
+.carusel {
+  display: grid;
+  gap: 30px;
+}
+.carusel > list-view {
+  width: 100%;
+  overflow: hidden;
+}
+.carusel > .list-view > .list {
+  display: flex;
+  width: calc(5 / 3 * 100%);
+  transition: all 2s;
+  transform: translate(-20px);
+}
+.carusel .list > .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 5);
+}
+.carusel > .actions > .dots {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.carusel .dots > .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.carusel .dots > .dot:active {
+  background-color: #d9a9e9;
+  transform: scale(1.4);
+}
+.prev:hover,
+.next:hover {
+  background-color: #d9a9e9;
+}

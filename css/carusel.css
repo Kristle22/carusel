@@ -1,6 +1,8 @@
 .carusel {
   display: grid;
   gap: 30px;
+  background-color: #d7e8f891;
+  padding: 50px 20px;
 }
 .carusel > list-view {
   width: 100%;
@@ -15,7 +17,7 @@
 .carusel .list > .card {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: calc(100% / 5);
 }
 .carusel > .actions > .dots {
@@ -31,11 +33,12 @@
   border-radius: 50%;
   cursor: pointer;
 }
-.carusel .dots > .dot:active {
-  background-color: #d9a9e9;
+.carusel .dots > .dot.active {
+  background-color: var(--primary-color);
   transform: scale(1.4);
 }
 .prev:hover,
 .next:hover {
-  background-color: #d9a9e9;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
